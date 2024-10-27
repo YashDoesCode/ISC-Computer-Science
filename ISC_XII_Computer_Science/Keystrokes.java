@@ -21,7 +21,6 @@ public class Keystrokes {
             }
             for (int j = 0; j < comb.length; j++) {
                 int cord = comb[j].indexOf(store);
-                
                 if (cord != -1) {
                     flag += (cord + 1);
                     break;

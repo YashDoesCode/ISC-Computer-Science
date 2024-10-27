@@ -1,4 +1,4 @@
-package ISC_XII_Computer_Science;
+package Friends;
 
 import java.util.*;
 class Goldbach
@@ -27,7 +27,7 @@ class Goldbach
             System.exit(0);
         }
         System.out.print("ODD PRIME PAIRS ARE:    ");
-        for(int i=3;i<=N/2; i=i+2)
+        for(int i=3; i<=N/2; i=i+2)
         {
             if(obj.isPrime(i) && obj.isPrime(N-i))
             {   

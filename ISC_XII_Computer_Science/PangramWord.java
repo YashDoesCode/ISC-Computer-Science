@@ -24,22 +24,22 @@ public class PangramWord {
 
     public void isPangram() {
         boolean[] alphabet = new boolean[26];
-        String longestWord = "", shortestWord = "";
+        String Long = "", Short = "";
         boolean hasLetters = false;
-        int wordStart = 0, wordLength = 0;
+        int wordStart = 0, len = 0;
 
         for (int i = 0; i < sentence.length(); i++) {
             char store = sentence.charAt(i);
 
             if (store == ' ' || store == '.' || store == '!' || store == '?') {
-                if (wordLength > 0) {
-                    String word = sentence.substring(wordStart, wordStart + wordLength);
+                if (len > 0) {
+                    String word = sentence.substring(wordStart, wordStart + len);
 
-                    if (longestWord.length() < word.length()) {
-                        longestWord = word;
+                    if (Long.length() < word.length()) {
+                        Long = word;
                     }
-                    if (shortestWord.length() == 0 || shortestWord.length() > word.length()) {
-                        shortestWord = word;
+                    if (Short.length() == 0 || Short.length() > word.length()) {
+                        Short = word;
                     }
 
                     for (int k = 0; k < word.length(); k++) {
@@ -49,13 +49,13 @@ public class PangramWord {
                             hasLetters = true;
                         }
                     }
-                    wordLength = 0;
+                    len = 0;
                 }
             } else {
-                if (wordLength == 0) {
+                if (len == 0) {
                     wordStart = i;
                 }
-                wordLength++;
+                len++;
             }
         }
 
@@ -68,9 +68,9 @@ public class PangramWord {
 
         if (hasLetters) {
             if (isPangram) {
-                System.out.println("IT IS A PANGRAM LONGEST WORD: " + longestWord + " SHORTEST WORD: " + shortestWord);
+                System.out.println("IT IS A PANGRAM LONGEST WORD: " + Long + " SHORTEST WORD: " + Short);
             } else {
-                System.out.println("IT IS NOT A PANGRAM LONGEST WORD: " + longestWord + " SHORTEST WORD: " + shortestWord);
+                System.out.println("IT IS NOT A PANGRAM LONGEST WORD: " + Long + " SHORTEST WORD: " + Short);
             }
         } else {
             System.out.println("INVALID INPUT");
@@ -78,8 +78,8 @@ public class PangramWord {
     }
 
     public static void main(String[] args) {
-        PangramWord meow = new PangramWord();
-        meow.accept();
-        meow.isPangram();
+        PangramWord obj = new PangramWord();
+        obj.accept();
+        obj.isPangram();
     }
 }

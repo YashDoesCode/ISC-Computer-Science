@@ -1,4 +1,4 @@
-package Friends;
+package Friends.Mayank_Awasthi;
 
 import java.util.Scanner;
 

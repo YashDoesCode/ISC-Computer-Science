@@ -30,11 +30,17 @@ public class PangramWord {
 
         for (int i = 0; i < sentence.length(); i++) {
             char store = sentence.charAt(i);
+
             if (store == ' ' || store == '.' || store == '!' || store == '?') {
                 if (wordLength > 0) {
                     String word = sentence.substring(wordStart, wordStart + wordLength);
-                    if (longestWord.length() < word.length()) longestWord = word;
-                    if (shortestWord.length() == 0 || shortestWord.length() > word.length()) shortestWord = word;
+
+                    if (longestWord.length() < word.length()) {
+                        longestWord = word;
+                    }
+                    if (shortestWord.length() == 0 || shortestWord.length() > word.length()) {
+                        shortestWord = word;
+                    }
 
                     for (int k = 0; k < word.length(); k++) {
                         char ch = Character.toLowerCase(word.charAt(k));
@@ -46,16 +52,18 @@ public class PangramWord {
                     wordLength = 0;
                 }
             } else {
-                if (wordLength == 0) wordStart = i;
+                if (wordLength == 0) {
+                    wordStart = i;
+                }
                 wordLength++;
             }
         }
 
         boolean isPangram = true;
-            for (boolean letter : alphabet) {
-           if (!letter) {
-           isPangram = false;
-        }
+        for (boolean letter : alphabet) {
+            if (!letter) {
+                isPangram = false;
+            }
         }
 
         if (hasLetters) {

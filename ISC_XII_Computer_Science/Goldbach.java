@@ -28,7 +28,7 @@ class Goldbach
         }
         System.out.print("ODD PRIME PAIRS ARE:    ");
         for(int i=3;i<=N/2; i=i+2)
-        {
+        {	
             if(obj.isPrime(i) && obj.isPrime(N-i))
             {   
                 System.out.print(i +", " + (N-i));

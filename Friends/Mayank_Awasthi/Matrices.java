@@ -1,6 +1,7 @@
-package Friends;
+package Friends.Mayank_Awasthi;
 
 import java.util.*;
+
 class Matrices
 {
     boolean isSymmetric(int[][] A,int M)

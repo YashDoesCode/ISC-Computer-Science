@@ -1,6 +1,7 @@
-package Friends;
+package Friends.Mayank_Awasthi;
 
 import java.util.*;
+
 class Keypad
 {
     boolean isValid(String s)

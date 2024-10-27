@@ -13,6 +13,6 @@ This repository serves as a personal reference and a resource for my friends. It
 - **Documentation:** Each program is accompanied by clear documentation, explaining the purpose, functionality, and usage of the code.
 
 Feel free to explore, contribute, and use this repository as a resource for your own studies!
--Yash Srivastava
+- Yash Srivastava
 
 ![14724c7b-e734-4344-ae11-1c41b103004f](https://github.com/user-attachments/assets/a2a04958-28d2-4507-bf58-e902053ff997)

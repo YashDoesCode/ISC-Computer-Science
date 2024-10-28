@@ -14,8 +14,14 @@ public class PangramWord {
             for (int i = 0; i < input.length(); i++) {
                 if (input.charAt(i) == '.' || input.charAt(i) == '!' || input.charAt(i) == '?') {
                     sentence += input;
-                    System.out.println("Sentence: " + sentence.trim());
-                    return;
+                    if (input.charAt(input.length() - 1) == '.' || input.charAt(input.length() - 1) == '!' || input.charAt(input.length() - 1) == '?') {
+                        System.out.println("Sentence: " + sentence.trim());
+                        return;
+                    } else {
+                        System.out.println("INVALID INPUT");
+                        sentence = "";
+                        return;
+                    }
                 }
             }
             sentence += input + " ";

@@ -2,11 +2,11 @@
 dependency1.from=LinkedList
 dependency1.to=Node
 dependency1.type=UsesDependency
-objectbench.height=94
-objectbench.width=692
-package.divider.horizontal=0.5614457831325301
-package.divider.vertical=0.8849658314350797
-package.editor.height=757
+objectbench.height=95
+objectbench.width=740
+package.divider.horizontal=0.6
+package.divider.vertical=0.8831615120274914
+package.editor.height=751
 package.editor.width=1151
 package.editor.x=338
 package.editor.y=42
